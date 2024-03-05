@@ -1,0 +1,3 @@
+//4.Famous Quote: Find a quote from a famous person you admire. Print the quote and the name of its author. Your output should look something like the following, including the quotation marks:
+//Albert Einstein once said, “A person who never made a mistake never tried anything new.”
+console.log("Albert Einstein Once said, \u201COnce you stop learning you start dying. \u201CIntellectuals solve problems, geniuses prevent them.\u201D \u201CThe only thing that interferes with my learning is my education.\u201D \u201CEducation is what remains after one has forgotten what one has learned in school.\"");
