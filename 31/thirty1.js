@@ -1,15 +1,12 @@
-"use strict";
 //31. No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
 // • If the list is empty, print the message We need to find some users!
-Object.defineProperty(exports, "__esModule", { value: true });
-let usernames = ["Nida", "Rizwan", "Ahsen", "Maham"];
-if (usernames.length === 0) {
+var userNames = ["Haniya", "Raniya", "Ahmed", "alisha"];
+userNames = [];
+if (userNames.length === 0) {
     console.log("we need to find some users!");
 }
 else {
-    for (let i = 0; i <= usernames.length; i++) {
-        // for (let username of usernames) {
-        console.log(usernames);
+    for (var i = 0; i <= userNames.length; i++) {
+        console.log(userNames, "  would you like to see a status report!?");
     }
 }
-usernames.splice(0, usernames.length);

@@ -3,13 +3,12 @@
 // "Lahore, Pakistan"
 // Call your function with at least three city-country pairs, and print the value that’s returned.
 
-function city_country(city:string , country:string) {
+function city_country(city:string , country:string) :string{
     return `${city}, ${country}`;
 }
-const cityCountry1 = city_country("Lahore", "Pakistan");
-const cityCountry2 = city_country("Maxico", "North-America");
-const cityCountry3 = city_country("London", "England");
-console.log(cityCountry1);
-console.log(cityCountry2);
-console.log(cityCountry3);
+console.log( city_country("Lahore", "Pakistan"));
+console.log(city_country("Maxico", "North-America"));
+ console.log( city_country("London", "England"));
+
+
 

@@ -1,16 +1,12 @@
-"use strict";
 // Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
-Object.defineProperty(exports, "__esModule", { value: true });
-function order_sandwich(...items) {
-    console.log("Sandwich Summary:");
-    if (items.length === 0) {
-        console.log("No items selected for the sandwich.");
+function orderSandwich() {
+    var reoder = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        reoder[_i] = arguments[_i];
     }
-    else {
-        console.log(`You ordered a sandwich with: ${items.join(', ')}`);
-    }
-    console.log("--------------------------");
+    console.log("\n making a sandwitch  with  following items:\n ");
+    reoder.forEach(function (singleItem) { return console.log(singleItem); });
 }
-order_sandwich("Turkey", "Cheese", "Lettuce", "Tomato");
-order_sandwich("Ham", "Swiss");
-order_sandwich();
+orderSandwich('pakistan', 'tommato', 'mayo');
+orderSandwich('ham', 'cheese');
+orderSandwich('indian', 'jelly');

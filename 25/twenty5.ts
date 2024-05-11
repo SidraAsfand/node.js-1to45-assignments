@@ -2,14 +2,11 @@
 // • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
 // • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
 let Alien_color:string = 'green';
-Alien_color = 'yellow';
-Alien_color = 'red';
 // // Version that passes the if test (green alien)
 if (Alien_color === 'green') {
      console.log("player just earned 5 points!");
  }
 //  Version that fails the if test (red alien)
-Alien_color = 'red';
 if (Alien_color === 'red') {
-    console.log();
+    console.log("ALIEN color is RED");
 }

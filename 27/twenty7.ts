@@ -21,6 +21,6 @@ else if (age >= 13 && age < 20) {
 else if (age >= 20 && age < 65) {
     console.log("the person is a adult");
 }
-else if (age > 65) {
+else if (age >= 65) {
     console.log("the person is an elder");
 }

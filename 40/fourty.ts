@@ -1,14 +1,12 @@
-type Album = {
-    artist :string;
-    title :string;
-    tracks?: number;
-};
 
-function make_album(artist:string, title:string,tracks?:number):Album{
-    let album :Album ={ artist, title};
+function make_album(artist_name:string, album_title:string, tracks?:number){
+    let album  :{ artist:string, title: string,tracks?:number}={
+        artist: artist_name,
+        title: album_title
+    };
 
 
-if(tracks){
+if(tracks !== undefined){
    album.tracks = tracks;
 }
 return album;

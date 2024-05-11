@@ -1,18 +1,21 @@
 
-function show_magicians(magicians) {
-    console.log("Magicians:");
-    for (const magician of magicians) {
-        console.log(magician);
+function show_magicians(magicians: string[]) {
+    magicians.forEach(name=>console.log(name));
+  }
+  
+  function make_great(magicians: string[]) {
+    return magicians.map(name=> `THE GREAT ${name}`);
     }
-}
-function make_great(magicians) {
-    const greatMagicians = [];
-    for (const magician of magicians) {
-        greatMagicians.push(`${magician} the Great`);
-    }
-    return greatMagicians;
-}
-const magicianNames = ["David Copperfield", "Harry Houdini", "Penn Jillette", "Teller"];
-const greatMagicians = make_great([...magicianNames]);
-show_magicians(magicianNames);
-show_magicians(greatMagicians);
+  const magicians_name: string[] = ['Naeem', 'Hussain', 'Faheem', 'Shahmeer', 'Shehzad', 'Irfan'];
+ 
+  let copy_magician =  [...magicians_name]
+
+ let copy_great= make_great(copy_magician);
+
+ //original  array
+ console.log("Original array \n");
+ show_magicians(magicians_name)
+
+ //coppied array
+ console.log("\n coppied array \n");
+ show_magicians(copy_great)

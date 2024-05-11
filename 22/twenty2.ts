@@ -6,5 +6,5 @@ const programmingLanguage = [
     "javascript",
     "typescript",
 ];
-console.log(programmingLanguage[6]);
+//console.log(programmingLanguage[6]);
 console.log(programmingLanguage[3]);

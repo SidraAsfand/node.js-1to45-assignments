@@ -1,15 +1,18 @@
 //31. No Users: Add an if test to Exercise 28 to make sure the list of users is not empty.
 // • If the list is empty, print the message We need to find some users!
 
-let usernames = ["Haniya", "Raniya", "Ahmed", "alisha"];
-if (usernames.length === 0) {
+let userNames = ["Haniya", "Raniya", "Ahmed", "alisha"];
+
+userNames=[]
+
+if (userNames.length === 0) {
     console.log("we need to find some users!");
 }
 else {
-    for (let i = 0; i <= usernames.length; i++) {
+    for (let i = 0; i <= userNames.length; i++) {
     
-        console.log(usernames);
+        console.log(userNames ,"  would you like to see a status report!?");
     }
 }
-usernames.splice(0, usernames.length);
+
  

@@ -10,13 +10,17 @@
 // • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 let countryArr = [ "Pakistan", "India", "Argentina", "Zimbabwe","America","Bangladesh"];
-//  console.log(countryArr);
-// console.log(countryArr.sort());
-// console.log(countryArr);
-// console.log(countryArr.reverse());
-//  console.log(countryArr);
-let sortedArray = [ "Pakistan","India","Argentina","Zimbabwe", "America",  "Bangladesh"];
-sortedArray.sort();
-console.log(sortedArray);
-sortedArray.reverse();
-console.log(sortedArray);
+ console.log("orignalorder",countryArr);
+ console.log("Alphabetical order sorted",[...countryArr].sort());
+console.log("still in original  order" ,countryArr);
+
+console.log("Alphabetical order reversed",[...countryArr].reverse());
+console.log("still in original  order" ,countryArr);
+
+console.log("Original array reversed",countryArr.reverse());
+console.log("Back to Original array",countryArr.reverse());
+
+console.log("Original array sorted",countryArr.sort());
+
+console.log("Original array reversed",countryArr.reverse());
+

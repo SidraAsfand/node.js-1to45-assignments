@@ -8,3 +8,4 @@ console.log(`${message} ${array_names[2]}`);
 console.log(`${message} ${array_names[3]}`);
 console.log(`${message} ${array_names[4]}`);
 console.log(`${message} ${array_names[5]}`);
+//array_names.forEach(greetings=>console.log(`HELLO,how are  you?? ${array_names}`))

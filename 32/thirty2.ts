@@ -4,16 +4,17 @@
 // • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
 // • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted
 
-const currentUsers = ["Alice", "Bob", "Charlie", "David", "Eve"];
-const newUsers = ["Bob", "Frank", "John", "Mallory", "Alice"];
-function isUsernameTaken(username) {
-    return currentUsers.some((user) => user.toLowerCase() === username.toLowerCase());
-}
-for (const newUser of newUsers) {
-    if (isUsernameTaken(newUser)) {
-        console.log(`Sorry, the username '${newUser}' is already taken. Please choose a different one.`);
+const currentUsers = ["Rabia",  "Ali",  "Hermain",  "Haram", "Aisha"];
+const newUsers = ["Babar","Irfan","haram","Sdira","asfand"];
+ 
+newUsers.forEach(new_oneUsers=>{
+
+ let newCondition =currentUsers.some((user) => user.toLowerCase() === new_oneUsers.toLowerCase());
+
+    if (newCondition){
+        console.log(`Sorry, the username '${new_oneUsers}' is already taken. Please choose a different one.`);
     }
     else {
-        console.log(`Congratulations! The username '${newUser}' is available.`);
+        console.log(`Congratulations! The username '${new_oneUsers}' is available.`);
     }
-}
+})

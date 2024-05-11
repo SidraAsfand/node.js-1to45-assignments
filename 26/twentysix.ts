@@ -4,7 +4,7 @@
 // • Write one version of this program that runs the if block and another that runs the else block.
 let Alien_colors:string = 'green';
 
-//Version that passes the if test (yellow mango)
+//Version that passes the if test (Green)
 if (Alien_colors === 'green') {
     console.log("player just earned 5 points for shooting the Aliens!");
 }
@@ -12,15 +12,7 @@ else {
     console.log("player just earnes 10 points!");
 }
 // Version that passes the else condition
-Alien_colors = 'purple';
 if (Alien_colors === 'yellow') {
-    console.log("player just earned 5 points!");
-}
-else {
-    console.log("player just earnes 10 points!");
-}
-Alien_colors = 'Blue';
-if (Alien_colors === 'Red') {
     console.log("player just earned 5 points!");
 }
 else {

@@ -10,4 +10,4 @@ let middleIndex = guestArr.length / 2;
 guestArr.splice(middleIndex, 0, middleGuest);
 guestArr.push("Wajeeha");
 // console.log(guestArr);
-console.log(guestArr.length + " " + "please" + " " + "are invited to dinner");
+console.log("we are inviting total" +" " +guestArr.length +" " + "Guests for dinner!");

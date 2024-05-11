@@ -1,4 +1,12 @@
-"use strict";
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 //18.Seeing the World: Think of at least five places in the world you’d like to visit.
 // • Store the locations in a array. Make sure the array is not in alphabetical order.
 // • Print your array in its original order.
@@ -10,14 +18,13 @@
 // • Reverse the order of your list again. Print the list to show it’s back to its original order.
 // • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
-let countryArr = ["Pakistan", "India", "Argentina", "Zimbabwe", "America", "Bangladesh"];
-//  console.log(countryArr);
-// console.log(countryArr.sort());
-// console.log(countryArr);
-// console.log(countryArr.reverse());
-//  console.log(countryArr);
-let sortedArray = ["Pakistan", "India", "Argentina", "Zimbabwe", "America", "Bangladesh"];
-sortedArray.sort();
-console.log(sortedArray);
-sortedArray.reverse();
-console.log(sortedArray);
+var countryArr = ["Pakistan", "India", "Argentina", "Zimbabwe", "America", "Bangladesh"];
+console.log("orignalorder", countryArr);
+console.log("Alphabetical order", __spreadArray([], countryArr, true).sort());
+console.log("still in original  order", countryArr);
+console.log("Alphabetical order", __spreadArray([], countryArr, true).reverse());
+console.log("still in original  order", countryArr);
+console.log("Original array reversed", countryArr.reverse());
+console.log("Back to Original array", countryArr.reverse());
+console.log("Original array sorted", countryArr.sort());
+console.log("Original array sorted", countryArr.reverse());
